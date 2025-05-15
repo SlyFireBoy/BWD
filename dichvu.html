@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dịch vụ</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .services {
+        max-width: 900px;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .service-item {
+        background: rgba(255, 255, 255, 0.95);
+        color: #000;
+        padding: 20px 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        font-size: 18px;
+      }
+
+      .service-item::before {
+        content: "✔️ ";
+        margin-right: 10px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>SUNNING</p>
+        <span class="sub-logo">EDUCATION</span>
+      </div>
+
+      <div class="menu-buttons">
+        <a href="index.html"><button>Trang chủ</button></a>
+        <a href="gioithieu.html"><button>Giới thiệu</button></a>
+        <a href="dichvu.html"><button>Dịch vụ</button></a>
+        <a href="giasu.html"><button>Gia sư</button></a>
+      </div>
+    </header>
+
+    <main>
+      <h1>Dịch vụ của chúng tôi</h1>
+      <div class="services">
+        <div class="service-item">
+          Dạy kèm Toán, Lý, Hóa, Tiếng Anh từ lớp 6–12
+        </div>
+        <div class="service-item">Luyện thi THPT Quốc gia, kỳ thi HSG</div>
+        <div class="service-item">Gia sư tại nhà hoặc học trực tuyến 1-1</div>
+        <div class="service-item">Tư vấn chọn trường, hướng nghiệp</div>
+      </div>
+    </main>
+  </body>
+</html>

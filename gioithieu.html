@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu - SUNNING Education</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>SUNNING</p>
+        <span class="sub-logo">EDUCATION</span>
+      </div>
+
+      <div class="menu-buttons">
+        <a href="index.html"><button>Trang chủ</button></a>
+        <a href="gioithieu.html"><button>Giới thiệu</button></a>
+        <a href="dichvu.html"><button>Dịch vụ</button></a>
+        <a href="giasu.html"><button>Gia sư</button></a>
+        <button class="toggle-darkmode" onclick="toggleDarkMode()">
+          🌓 Chế độ tối
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <h1>Chào mừng đến với SUNNING Education</h1>
+
+      <p>
+        Chúng tôi là nền tảng giáo dục hiện đại, chuyên kết nối học sinh và sinh
+        viên với những gia sư chất lượng, giàu kinh nghiệm và nhiệt huyết.
+        <br /><br />
+        SUNNING không chỉ là nơi học tập mà còn là môi trường truyền cảm hứng,
+        giúp học sinh phát triển toàn diện cả về kiến thức và kỹ năng sống.
+      </p>
+
+      <a href="dichvu.html" class="start-button">Khám phá dịch vụ</a>
+
+      <div class="banner">
+        <img src="yalenews/anh3.jpg" alt="Giới thiệu SUNNING" />
+      </div>
+    </main>
+
+    <script>
+      // Lưu trạng thái dark mode vào localStorage
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+        if (document.body.classList.contains("dark-mode")) {
+          localStorage.setItem("darkMode", "true");
+        } else {
+          localStorage.setItem("darkMode", "false");
+        }
+      }
+
+      // Tự động bật dark mode nếu người dùng đã bật trước đó
+      window.onload = function () {
+        if (localStorage.getItem("darkMode") === "true") {
+          document.body.classList.add("dark-mode");
+        }
+      };
+    </script>
+  </body>
+</html>

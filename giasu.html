@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gia sư</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .tutor-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+        padding: 0 20px;
+      }
+
+      .tutor-card {
+        background: rgba(255, 255, 255, 0.95);
+        color: #000;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+      }
+
+      .tutor-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .tutor-card h3 {
+        margin-bottom: 10px;
+      }
+
+      .tutor-card p {
+        font-size: 15px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>SUNNING</p>
+        <span class="sub-logo">EDUCATION</span>
+      </div>
+
+      <div class="menu-buttons">
+        <a href="index.html"><button>Trang chủ</button></a>
+        <a href="gioithieu.html"><button>Giới thiệu</button></a>
+        <a href="dichvu.html"><button>Dịch vụ</button></a>
+        <a href="giasu.html"><button>Gia sư</button></a>
+      </div>
+    </header>
+
+    <main>
+      <h1>Gia sư tiêu biểu</h1>
+      <p>Đội ngũ gia sư chất lượng - kinh nghiệm - tận tâm</p>
+      <div class="tutor-grid">
+        <div class="tutor-card">
+          <h3>Nguyễn Thị A</h3>
+          <p>Thạc sĩ Toán học - 5 năm kinh nghiệm giảng dạy cấp 3.</p>
+        </div>
+        <div class="tutor-card">
+          <h3>Trần Văn B</h3>
+          <p>Cử nhân Vật lý - Giảng viên trường ĐH Bách Khoa.</p>
+        </div>
+        <div class="tutor-card">
+          <h3>Phạm Thị C</h3>
+          <p>
+            Giáo viên tiếng Anh IELTS 8.0 - từng giảng dạy tại Trung tâm ACET.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
